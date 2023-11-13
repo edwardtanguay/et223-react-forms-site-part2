@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	h1 {
+		font-variant: small-caps;
+	}
+
+	button {
+		@apply inline-block rounded bg-gray-500 hover:bg-gray-600 px-3 py-2 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out focus:border focus:border-gray-300 focus:ring-0 focus:outline-none;
+	}
+}
+
+a.active {
+	color: rgb(232, 232, 141);
+}

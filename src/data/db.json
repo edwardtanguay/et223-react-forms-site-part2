@@ -1,0 +1,58 @@
+{
+  "employees": [
+    {
+      "firstName": "James",
+      "lastName": "Ralton",
+      "age": 34,
+      "hireDate": "2023-11-02",
+      "employeeNumber": "S-7771",
+      "notes": "222",
+      "id": 1
+    },
+    {
+      "firstName": "Paula",
+      "lastName": "sdfkj",
+      "age": 34,
+      "hireDate": "2020-02-02",
+      "employeeNumber": "S-2828",
+      "notes": "",
+      "id": 4
+    },
+    {
+      "firstName": "Jack",
+      "lastName": "Grandom",
+      "age": 62,
+      "hireDate": "2003-02-02",
+      "employeeNumber": "M-8271",
+      "notes": "new employee",
+      "id": 5
+    },
+    {
+      "firstName": "fff",
+      "lastName": "lll",
+      "age": 34,
+      "hireDate": "2020-02-02",
+      "employeeNumber": "D-2343",
+      "notes": "sdfsdf",
+      "id": 6
+    },
+    {
+      "firstName": "Ronald",
+      "lastName": "Tangnn",
+      "age": 22,
+      "hireDate": "2000-02-02",
+      "employeeNumber": "D-2343",
+      "notes": "added for import test",
+      "id": 7
+    },
+    {
+      "firstName": "John",
+      "lastName": "Newton",
+      "age": 23,
+      "hireDate": "2005-02-02",
+      "employeeNumber": "D-2384",
+      "notes": "added again locally",
+      "id": 8
+    }
+  ]
+}
