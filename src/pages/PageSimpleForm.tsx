@@ -39,7 +39,7 @@ export const PageSimpleForm = () => {
 	};
 	return (
 		<form onSubmit={handleFormSubmit}>
-			<fieldset className="border border-slate-500 p-4 rounded">
+			<fieldset className="border border-slate-500 p-4 rounded max-w-[25rem]">
 				<legend>New Employee</legend>
 
 				<div className="mb-4 flex gap-2">
