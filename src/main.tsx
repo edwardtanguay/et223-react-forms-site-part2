@@ -3,10 +3,10 @@ import App from "./App.tsx";
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 import "./index.scss";
 import { PageSimpleForm } from "./pages/PageSimpleForm.tsx";
-import { PageAbout } from "./pages/PageAbout.tsx";
 import { Page404 } from "./pages/Page404.tsx";
 import { PageEmployees } from "./pages/PageEmployees.tsx";
 import * as config from './config';
+import { PageStateForm } from "./pages/PageStateForm.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -23,8 +23,8 @@ const router = createBrowserRouter([
 				element: <PageEmployees />,
 			},
 			{
-				path: "/about",
-				element: <PageAbout />,
+				path: "/state-form",
+				element: <PageStateForm />,
 			},
 			{
 				path: "/",
