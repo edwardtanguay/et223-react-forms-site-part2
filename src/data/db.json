@@ -54,5 +54,19 @@
       "notes": "added again locally",
       "id": 8
     }
+  ],
+  "members": [
+    {
+      "firstName": "Thomas",
+      "lastName": "Grang",
+      "age": 23,
+      "id": 1
+    },
+    {
+      "firstName": "Hank",
+      "lastName": "Crampton",
+      "age": 62,
+      "id": 2
+    }
   ]
 }
