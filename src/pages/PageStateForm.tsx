@@ -1,4 +1,5 @@
 import { ChangeEvent, useState } from "react";
+import * as config from "../config";
 
 const initialFormInfo = {
 	fields: [
@@ -19,7 +20,7 @@ const initialFormInfo = {
 		{
 			idCode: "age",
 			label: "Age",
-			value: 0,
+			value: "",
 			isRequired: true,
 			isValid: false,
 		},
@@ -64,48 +65,58 @@ export const PageStateForm = () => {
 	};
 
 	return (
-		<form>
-			<fieldset className="border border-slate-500 p-4 rounded max-w-[25rem]">
-				<legend>New Member</legend>
+		<section className="flex gap-8">
+			<form>
+				<fieldset className="border border-slate-500 p-4 rounded max-w-[25rem]">
+					<legend>New Member</legend>
 
-				<div className="mb-4 flex gap-2">
-					<label className="w-40" htmlFor="firstName">
-						First Name:
-					</label>
-					<input
-						type="text"
-						id="firstName"
-						onChange={handleFieldFirstName}
-					/>
-				</div>
+					<div className="mb-4 flex gap-2">
+						<label className="w-32" htmlFor="firstName">
+							First Name:
+						</label>
+						<input
+							type="text"
+							autoFocus
+							id="firstName"
+							onChange={handleFieldFirstName}
+						/>
+					</div>
 
-				<div className="mb-4 flex gap-2">
-					<label className="w-[10rem]" htmlFor="lastName">
-						Last Name:
-					</label>
-					<input
-						type="text"
-						id="lastName"
-						onChange={handleFieldLastName}
-					/>
-				</div>
+					<div className="mb-4 flex gap-2">
+						<label className="w-32" htmlFor="lastName">
+							Last Name:
+						</label>
+						<input
+							type="text"
+							id="lastName"
+							onChange={handleFieldLastName}
+						/>
+					</div>
 
-				<div className="mb-4 flex gap-2">
-					<label className="w-[10rem]" htmlFor="age">
-						Age:
-					</label>
-					<input
-						type="text"
-						id="age"
-						className="w-12 text-right"
-						onChange={handleFieldAge}
-					/>
-				</div>
+					<div className="mb-4 flex gap-2">
+						<label className="w-32" htmlFor="age">
+							Age:
+						</label>
+						<input
+							type="text"
+							id="age"
+							className="w-12 text-right"
+							onChange={handleFieldAge}
+						/>
+					</div>
 
-				<div className="mt-5 flex justify-end pr-3">
-					<button>Add Member</button>
-				</div>
-			</fieldset>
-		</form>
+					<div className="mt-5 flex justify-end pr-3">
+						<button>Add Member</button>
+					</div>
+				</fieldset>
+			</form>
+			{config.debugging && (
+				<section className="mt-4">
+					<pre className="text-orange-900 text-xs">
+						{JSON.stringify(formInfo, null, 2)}
+					</pre>
+				</section>
+			)}
+		</section>
 	);
 };
