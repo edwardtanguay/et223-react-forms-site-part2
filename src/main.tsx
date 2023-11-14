@@ -16,7 +16,7 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: "/simple-form",
-				element: config.environment === 'development' ? <PageSimpleForm /> : <Navigate to="/employees" replace />
+				element: config.environment() === 'development' ? <PageSimpleForm /> : <Navigate to="/employees" replace />
 			},
 			{
 				path: "/employees",

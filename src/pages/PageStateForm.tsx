@@ -110,7 +110,7 @@ export const PageStateForm = () => {
 					</div>
 				</fieldset>
 			</form>
-			{config.debugging && (
+			{config.debugging() && (
 				<section className="mt-4">
 					<pre className="text-orange-900 text-xs">
 						{JSON.stringify(formInfo, null, 2)}
